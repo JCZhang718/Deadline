@@ -37,25 +37,25 @@ function showDeadlines(deadlines) {
 		var leftDay = div();
 		leftDay.text(currentDay.format('dd DD MMM'));
 		if (todayOffset == 0) {
-			leftDay.css('background-color', '#6d6');
+			leftDay.addClass('today');
 		}
 		left.append(leftDay);
 		
 		
 		// Background color.
-		var bgColor = 'none';
+		var bgClass = 'none';
 		var dayOfWeek = currentDay.day();
 		if (dayOfWeek == 0 || dayOfWeek == 6) {
-			bgColor = '#cfc';
+			bgClass = 'weekend';
 		}
 		
-		var red = '#fbb';
+		var red = 'overdue';
 		// If deadlines on currentDay.
 		if (deadlines.length > 0 && deadlines[0].due.isSame(currentDay, 'day')) {
-			bgColor = '#ffc';
+			bgClass = 'due';
 			// Before today.
 			if (todayOffset < 0) {
-				bgColor = red;
+				bgClass = red;
 			}
 			var right = div();
 			right.addClass('right');
@@ -72,12 +72,12 @@ function showDeadlines(deadlines) {
 				
 				var deadlineDiv = div();
 				if (deadline.due.isBefore(today)) {
-					var deadlineDivColor = red;
+					var deadlineDivClass = red;
 					if (deadline.lab_hours !== undefined && labEnd.isAfter(today)) {
 						// Orange if lab is now.
-						deadlineDivColor = '#fc8';
+						deadlineDivClass = 'duenow';
 					}
-					deadlineDiv.css('background-color', deadlineDivColor);
+					deadlineDiv.addClass(deadlineDivClass);
 				}
 				right.append(deadlineDiv);
 				
@@ -109,7 +109,7 @@ function showDeadlines(deadlines) {
 			//left.css('width', '100px');
 		}
 		
-		ele.css('background-color', bgColor);
+		ele.addClass(bgClass);
 		// Next day.
 		todayOffset++;
 		currentDay.add(1, 'd');

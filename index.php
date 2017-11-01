@@ -45,6 +45,22 @@
 			max-width: 600px;
 			font-size: 0.9em;
 		}
+
+		.today {
+			background-color: #6d6;
+		}
+		.weekend {
+			background-color: #cfc;
+		}
+		.overdue {
+			background-color: #fbb;
+		}
+		.due {
+			background-color: #ffc;
+		}
+		.duenow {
+			background-color: #fc8;
+		}
 		
 		.left {
 			font-family: 'Share Tech Mono', monospace;	
