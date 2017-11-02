@@ -36,30 +36,36 @@
 		
 		html {
 			font-family: 'Open Sans', sans-serif;
+			background-color: #222;
+			color: #bbb;
+		}
+		a {
+			color: #59c;
+			text-decoration: none;
 		}
 		
 		.box {
 			padding: 5px;
 			overflow: auto;
-			border-top: solid 2px #d0e0e0;
+			border-top: solid 2px #222;
 			max-width: 600px;
 			font-size: 0.9em;
 		}
 
 		.today {
-			background-color: #6d6;
+			background-color: #373;
 		}
 		.weekend {
-			background-color: #cfc;
-		}
-		.overdue {
-			background-color: #fbb;
+			background-color: #284828;
 		}
 		.due {
-			background-color: #ffc;
+			background-color: #383838;
 		}
 		.duenow {
-			background-color: #fc8;
+			background-color: #664400;
+		}
+		.overdue {
+			background-color: #522;
 		}
 		
 		.left {
