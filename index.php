@@ -105,8 +105,8 @@
 		}
 		.notice {
 			font-size: 0.8em;
-			margin-top: 30px;
 			font-weight: bold;
+			margin-bottom: 20px;
 		}
 
 		@media (min-width:768px) {
@@ -122,6 +122,7 @@
 	</style>
 </head>
 <div id="disclaimer">Disclaimer: Do not trust this information under any circumstances.</div>
+<div id="complier" class="notice">Prefer dark theme in your editors? Why not try <a href= "../deadline-dark">this</a>?</div> 
 <div id="main"></div>
 <!--
 <div id="complier" class="notice">The first four exercises for Complier Design don't have officially assigned deadlines, so their deadlines here are going to be the release date of the following exercise. <br/> Except Exercise 3 and 4. These ones you actually need to submit. </div>
