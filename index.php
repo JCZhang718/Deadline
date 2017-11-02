@@ -21,7 +21,7 @@
 	}
 
 	$indexjs_filename = get_time_filename('index.js');
-	$json = file_get_contents('deadlines.json');
+	$json = file_get_contents('../deadline/deadlines.json');
 ?>
 <head>
 	<title>ICS Deadlines</title>
@@ -107,8 +107,8 @@
 		}
 		.notice {
 			font-size: 0.8em;
-			margin-top: 30px;
 			font-weight: bold;
+			margin-bottom: 20px;
 		}
 
 		@media (min-width:768px) {
@@ -124,6 +124,7 @@
 	</style>
 </head>
 <div id="disclaimer">Disclaimer: Do not trust this information under any circumstances.</div>
+<div id="complier" class="notice">It's too dark in here. <a href= "../deadline">Turn the lights back on!</a></div>
 <div id="main"></div>
 <!--
 <div id="complier" class="notice">The first four exercises for Complier Design don't have officially assigned deadlines, so their deadlines here are going to be the release date of the following exercise. <br/> Except Exercise 3 and 4. These ones you actually need to submit. </div>
