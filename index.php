@@ -99,6 +99,7 @@
 		}
 		#made > span {
 			display: inline-block;
+			display: none;
 			position: relative;
 			top: -12px;
 			width: 0;
