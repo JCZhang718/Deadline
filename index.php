@@ -45,7 +45,7 @@
 		.box {
 			padding: 5px;
 			overflow: auto;
-			border-top: solid 2px #d0e0e0;
+			border-top: solid 2px #fff;
 			max-width: 600px;
 			font-size: 0.9em;
 		}
@@ -57,7 +57,7 @@
 			background-color: #cfc;
 		}
 		.due {
-			background-color: #ffc;
+			background-color: #f4f4f4;
 		}
 		.duenow {
 			background-color: #fc8;
